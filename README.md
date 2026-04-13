@@ -1,6 +1,6 @@
 CHAPTER 2
 # Bài 1
-<img width="631" height="396" alt="image" src="https://github.com/user-attachments/assets/3856838a-ebd2-456f-a6b5-4fa5ceb65891" />
+<img width="1285" height="713" alt="image" src="https://github.com/user-attachments/assets/1a29d702-75e7-4f08-8511-1389405a47f4" />
 
 # Bài 2
 <img width="1032" height="744" alt="image" src="https://github.com/user-attachments/assets/58e56897-cd8d-4bc8-8cd9-437fb26d4c88" />
