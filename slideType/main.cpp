@@ -69,7 +69,7 @@ using namespace std;
 
 // //35
 // int main() {
-//     printf("somethjing");
+//     printf("somethjng");
 //     return 0;
 // }
 // //36
@@ -81,11 +81,54 @@ using namespace std;
 //     return 0;
 // }
 //37
-//
-// #include <math.h>
+
+#include <math.h>
 //
 // int main() {
 //     double x = 16.0;
 //     printf("square root of %.1f is %.1f", x, sqrt(x));
+//     printf("pow %.1f is %1f", x pow(x, 2));
 //     return 0;
+// }
+
+
+
+
+
+
+// ======================== chapter 3==========================
+
+// // 5
+// int main() {
+//     int x = 10;
+//     //outter
+//     {
+//         int y = 20;
+//         {    //inner block
+//
+//             int z = 30;
+//             printf("inside inner block: x = %d, y = %d, z = %d\n", x, y, z);
+//         }
+//         printf("outside all block: x = %d\n", x);
+//         return 0;
+//     }
+// }
+// 11
+// int globalVar = 585;
+// void display() {
+//     printf("Bien global = %d\n", globalVar);
+// }
+// int main() {
+//     display();
+// }
+// // 12
+// void increment() {
+//     static  int  counter = 0;
+//     counter++;
+//     printf("couter = %d\n", counter);
+// }
+// int main() {
+//     increment();
+//     increment();
+//     increment();
 // }

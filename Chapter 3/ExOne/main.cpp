@@ -1,189 +1,178 @@
-#include <cstdio> // Thu vien cho printf va scanf
-#include <stdlib.h>
+#include <cstdio>
 
-
+// Hàm hỗ trợ xóa bộ nhớ đệm
+// --- BÀI 1 ---
 void bai1() {
-    //30
-    // int () {
-    //     int num1, num2;
-    //
-    //     printf("Enter two numbers: ");
-    //     scanf("%d%d", &num1, &num2);
-    //
-    //     printf("addition: %d\n", num1 + num2);
-    //     printf("subtraction: %d\n", num1 - num2);
-    //     printf("multiplication: %d\n", num1 * num2);
-    //     printf("division: %d\n", num1 / num2);
-    //     printf("Modulus:%d", num1 % num2);
+    //38
+    // #include <string.h>
+    // int main() {
+    //   char str1[] = "hello ";
+    //     char str2[] = "world";
+    //     strcat (str1, str2);
+    //     printf("%s\n", str1);
     //     return 0;
     // }
-    // 31
-    // int main() {
-    //     int a,b;
-    //
-    //     printf("enter 2 numbers: ");
-    //     scanf("%d%d",&a,&b);
-    //
-    //     if (a > b)
-    //         printf("%d a bigger b %d\n", a,b);
-    //     else if (a < b)
-    //         printf("%d a smaller b %d\n", a, b);
-    //     else
-    //         printf("%d a equal b %d\n", a, b);
-    //     return 0;
-    // }
-    // //32
-    // int main() {
-    //     int num;
-    //     printf("Enter a number: ");
-    //     scanf("%d", &num);
-    //     if (num >= 10 && num <= 50)
-    //     printf("The number is between 0 and 50");
-    //     else
-    //         printf("The number is not in the range");
-    // }
-    // //33
-    //  int main() {
-    //      int num = 10;
-    //
-    //      printf("Intial vaule: %d\n",num);
-    //
-    //      num += 5;
-    //      printf("after += 5: %d\n",num);
-    //
-    //      num -= 3;
-    //      printf("after -= 3: %d\n",num);
-    //
-    //      num *= 2;
-    //      printf("after *= 2: %d\n",num);
-    //
-    //      num /= 4;
-    //      printf("after /= 4: %d\n",num);
-    //
-    //      return 0;
-    //  }
 
-    // //35
+    // //39
+    // #include <time.h>
     // int main() {
-    //     printf("somethjing");
+    //     time_t current_time;
+    //     time(&current_time);
+    //     printf("Current_time: %s", ctime(&current_time));
     //     return 0;
     // }
-    // //36
-    // #include <stdlib.h>
-    //
-    // int main() {
-    //     int number = atoi("123");
-    //     printf("converted number = %d", number);
+
+    //40
+
+    // #include <ctype.h>
+    // int main(){
+    //     char c = 'a';
+    //     if (isalpha(c)) {
+    //     printf("'%c'is a letter.\n");
     //     return 0;
-    // }
-    //37
-    //
-    // #include <math.h>
-    //
-    // int main() {
-    //     double x = 16.0;
-    //     printf("square root of %.1f is %.1f", x, sqrt(x));
-    //     return 0;
+    //     }
     // }
 }
-
+// --- BÀI 2 ---
 void bai2() {
-    int n;
-    float inputFloat;
-    printf("\n--- Bai 2: Ep kieu du lieu ---\n");
-
-    printf("Nhap mot so nguyen: ");
-    scanf("%d", &n);
-    printf("Ep kieu %d sang so thuc: %.2f\n", n, (float)n);
-
-    printf("Nhap mot so thuc: ");
-    scanf("%f", &inputFloat);
-    printf("Ep kieu %.2f sang so nguyen: %d\n", inputFloat, (int)inputFloat);
+    // // 5
+    // int main() {
+    //     int x = 10;
+    //     //outter
+    //     {
+    //         int y = 20;
+    //         {    //inner block
+    //
+    //             int z = 30;
+    //             printf("inside inner block: x = %d, y = %d, z = %d\n", x, y, z);
+    //         }
+    //         printf("outside all block: x = %d\n", x);
+    //         return 0;
+    //     }
+    // }
+    // 11
+    // int globalVar = 585;
+    // void display() {
+    //     printf("Bien global = %d\n", globalVar);
+    // }
+    // int main() {
+    //     display();
+    // }
+    // // 12
+    // void increment() {
+    //     static  int  counter = 0;
+    //     counter++;
+    //     printf("couter = %d\n", counter);
+    // }
+    // int main() {
+    //     increment();
+    //     increment();
+    //     increment();
+    // }
 }
 
+// --- BÀI 3 ---
 void bai3() {
-    int a, b;
-    printf("\n--- Bai 3: Cac phep toan co ban ---\n");
-    printf("Nhap hai so nguyen a va b: ");
-    scanf("%d %d", &a, &b);
-
-    printf("Tong: %d\n", a + b);
-    printf("Hieu: %d\n", a - b);
-    printf("Tich: %d\n", a * b);
-
-    if (b != 0) {
-        printf("Chia lay nguyen: %d\n", a / b);
-        printf("Chia lay du (%%): %d\n", a % b);
-        printf("Chia lay thuc: %.2f\n", (float)a / b);
-    } else {
-        printf("Loi: Khong the chia cho 0!\n");
+    printf("\n--- Bai 3: Pham vi bien (Scope) ---\n");
+    int x = 10; // Biến x của hàm main (outer)
+    printf("Gia tri x ben ngoai khoi lenh: %d\n", x);
+    
+    {
+        int x = 20; // Biến x moi ben trong khoi lenh (inner)
+        printf("Gia tri x ben trong khoi lenh {}: %d\n", x);
     }
+    
+    printf("Gia tri x sau khi thoat khoi lenh: %d\n", x);
 }
 
+// --- BÀI 4 ---
 void bai4() {
-    float x;
-    printf("\n--- Bai 4: Toan tu gan hon hop ---\n");
-    printf("Nhap x: ");
-    scanf("%f", &x);
+    printf("\n--- Bai 4: Truy cap bien khoi ngoai tu khoi con ---\n");
+    int outerVar = 100;
+    printf("Bien ngoai (Outer block) co gia tri: %d\n", outerVar);
+    
+    {
+        printf("Truy cap tu khoi trong (Inner block): %d\n", outerVar);
+        outerVar += 50; 
+    }
+    printf("Gia tri bien ngoai sau khi bi khoi trong thay doi: %d\n", outerVar);
+}
 
-    x += 5; printf("Sau khi tang 5 (+=5): %.2f\n", x);
-    x -= 3; printf("Sau khi giam 3 (-=3): %.2f\n", x);
-    x *= 2; printf("Sau khi nhan 2 (*=2): %.2f\n", x);
-    x /= 4; printf("Sau khi chia 4 (/=4): %.2f\n", x);
+// --- BÀI 5 ---
+void incrementNonStatic() {
+    int counter = 0; // Biến thường: bị khởi tạo lại mỗi khi gọi hàm
+    counter++;
+    printf("Non-static counter: %d\n", counter);
+}
+
+void incrementStatic() {
+    static int counter = 0; // Biến static: giữ nguyên giá trị qua các lần gọi hàm
+    counter++;
+    printf("Static counter: %d\n", counter);
 }
 
 void bai5() {
-    int n;
-    printf("\n--- Bai 5: Toan tu Logic && ---\n");
-    printf("Nhap mot so nguyen: ");
-    scanf("%d", &n);
-
-    if (n >= 10 && n <= 50) {
-        printf("%d nam trong khoang [10, 50]\n", n);
-    } else {
-        printf("%d KHONG nam trong khoang [10, 50]\n", n);
+    printf("\n--- Bai 5: Static vs Non-static ---\n");
+    printf("Goi ham tang 3 don vi:\n");
+    for(int i = 0; i < 3; i++) {
+        printf("Lan %d: ", i + 1);
+        incrementNonStatic();
+    }
+    printf("----------\n");
+    for(int i = 0; i < 3; i++) {
+        printf("Lan %d: ", i + 1);
+        incrementStatic();
     }
 }
 
+// --- BÀI 6 ---
 void bai6() {
-    int a, b;
-    printf("\n--- Bai 6: Toan tu dich bit ---\n");
-    printf("Nhap so a: "); scanf("%d", &a);
-    printf("Nhap so buoc dich b: "); scanf("%d", &b);
-
-    printf("Dich trai (a << b): %d\n", (a << b));
-    printf("Dich phai (a >> b): %d\n", (a >> b));
-}
-
-void bai7() {
     int a, b, c;
-    printf("\n--- Bai 7: Tim Max bang if/else ---\n");
-    printf("Nhap 3 so a, b, c: ");
+    printf("\n--- Bai 6: Toan tu logic thay cho if long nhau ---\n");
+    printf("Nhap 3 so nguyen: ");
     scanf("%d %d %d", &a, &b, &c);
 
-    int max = a;
-    if (b > max) max = b;
-    if (c > max) max = c;
-
-    printf("Gia tri lon nhat la: %d\n", max);
+    // Thay vi dung 3 if long nhau, ta dung &&
+    if (a > 0 && b > 0 && c > 0) {
+        printf("Ca 3 so deu la so duong.\n");
+    } else {
+        printf("Co it nhat mot so khong phai so duong.\n");
+    }
 }
 
+// --- BÀI 7 ---
+void bai7() {
+    float a, b;
+    printf("\n--- Bai 7: Phep chia co check loi ---\n");
+    printf("Nhap so bi chia a: ");
+    scanf("%f", &a);
+    printf("Nhap so chia b: ");
+    scanf("%f", &b);
+
+    if (b == 0) {
+        printf("Loi: Khong the thuc hien phep chia cho 0!\n");
+    } else {
+        printf("Ket qua %.2f / %.2f = %.2f\n", a, b, a / b);
+    }
+}
+
+// --- CHUONG TRINH CHINH ---
 int main() {
     int chon;
     do {
-        printf("\n================ MENU BAITAP ================\n");
-        printf("1. Bai 1 (Slide 30-37)\n");
-        printf("2. Bai 2 (Ep kieu)\n");
-        printf("3. Bai 3 (Cac phep toan)\n");
-        printf("4. Bai 4 (Toan tu gan)\n");
-        printf("5. Bai 5 (Toan tu logic)\n");
-        printf("6. Bai 6 (Dich bit)\n");
-        printf("7. Bai 7 (Tim Max)\n");
+        printf("\n================ MENU BAI TAP ================\n");
+        printf("1. Bai 1 (Slide Ch2/38-40)\n");
+        printf("2. Bai 2 (Slide Ch3/5, 11, 12)\n");
+        printf("3. Bai 3 (Scope - Bien trung ten)\n");
+        printf("4. Bai 4 (Scope - Truy cap khoi ngoai)\n");
+        printf("5. Bai 5 (Static vs Non-static)\n");
+        printf("6. Bai 6 (Toan tu logic &&)\n");
+        printf("7. Bai 7 (Check loi phep chia)\n");
         printf("0. Thoat\n");
-        printf("Chon so bai tap (0-7): ");
-
+        printf("Chon bai tap (0-7): ");
+        
         if (scanf("%d", &chon) != 1) {
-            printf("Vui long chi nhap so!\n");
+            printf("Vui long nhap so!\n");
             chon = -1;
             continue;
         }
@@ -199,7 +188,7 @@ int main() {
             case 0: printf("Tam biet!\n"); break;
             default: printf("Lua chon khong hop le!\n");
         }
-        printf("---------------------------------------------\n");
+        printf("----------------------------------------------\n");
     } while (chon != 0);
 
     return 0;
