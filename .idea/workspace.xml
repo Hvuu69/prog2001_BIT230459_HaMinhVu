@@ -18,7 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89cadf76-a5ea-455a-aef2-3fc34d2bfc33" name="Changes" comment="ExamChapter_2">
-      <change afterPath="$PROJECT_DIR$/Chapter 2/02/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter 3/ExTwo/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter 3/ExOne/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter 3/ExOne/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slideType/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/slideType/main.cpp" afterDir="false" />
@@ -34,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Hvuu69"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Hvuu69/prog2001_BIT230459_HaMinhVu.git",
+    "accountId": "940b3b8b-1dae-411c-82dd-2b760de16485"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Chapter 2/02/main.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -88,10 +100,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Clion\Git Repo C++\Chapter 3\ExOne" />
       <recent name="D:\Clion\Git Repo C++\Chapter 2" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.main.cpp (5)">
+  <component name="RunManager" selected="C/C++ File.main.cpp (4)">
     <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Git Repo C++" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="Chapter 3\ExOne\main.cpp" />
       <method v="2">
@@ -110,25 +123,25 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main.cpp (4)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Git Repo C++" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="Chapter 3\ExTwo\main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.cpp (5)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Git Repo C++" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="slideType\main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Git Repo C++" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
-      <option name="sourceFile" value="Chapter 2\ExOne\main.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.main.cpp (4)" />
         <item itemvalue="C/C++ File.main.cpp (5)" />
-        <item itemvalue="C/C++ File.main.cpp (2)" />
         <item itemvalue="C/C++ File.main.cpp (1)" />
+        <item itemvalue="C/C++ File.main.cpp (2)" />
         <item itemvalue="C/C++ File.main.cpp (3)" />
-        <item itemvalue="C/C++ File.main.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +160,8 @@
       <workItem from="1776140305461" duration="3327000" />
       <workItem from="1776215357655" duration="287000" />
       <workItem from="1776221937566" duration="6072000" />
-      <workItem from="1776259427762" duration="301000" />
+      <workItem from="1776259427762" duration="509000" />
+      <workItem from="1776307327978" duration="9435000" />
     </task>
     <task id="LOCAL-00001" summary="ExamChapter_2">
       <option name="closed" value="true" />
@@ -157,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776065622364</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ExamChapter_2">
+      <option name="closed" value="true" />
+      <created>1776308729720</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776308729720</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ExamChapter_2">
+      <option name="closed" value="true" />
+      <created>1776311161772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776311161772</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

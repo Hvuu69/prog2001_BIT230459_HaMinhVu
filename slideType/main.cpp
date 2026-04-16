@@ -139,3 +139,63 @@ using namespace std;
 //     increment();
 //     increment();
 // }
+
+
+//===============================Câu lệnh điều kiện rẽ nhánh =====================================
+
+// //6
+//     int main() {
+//         int a = 10;
+//     if (a == 0)
+//         printf("a = k\n");
+//     else
+//         printf("a khac k\n");
+//
+//         if (a == 0) {
+//             printf("a = k\n");
+//             a = 2912;
+//         }
+//         else
+//             printf("a khac k\n");
+// }
+
+//9
+// int main() {
+//     float delta;
+//     scanf("%f", &delta);
+//     if (delta < 0 )
+//         printf("pt vo nghiem\n");
+//     if (delta == 0)
+//         printf("pt co nghiem kep\n");
+//     if (delta > 0)
+//         printf("pt co 2 nghiem\n");
+//
+//     if (delta < 0)
+//         printf("pt vo nghiem\n");
+//     else
+//         if (delta == 0)
+//         printf("pt co nghiem kep\n");
+//         else
+//             printf("pt co 2 nghiem\n");
+//
+// }
+
+int main () {
+  int min ;
+  int a, b, c, d;
+  printf("nhap 4 so nguyen a, b, c, d:");
+  scanf("%d %d %d %d", &a, &b, &c, &d);
+//tim min
+    min = a;
+
+    if (min > b)
+        min = b;
+    if (min > c)
+        min = c;
+    if (min > d)
+        min = d;
+    printf("so nho nhat la: %d", min);
+    return 0;
+// sap xep
+
+}

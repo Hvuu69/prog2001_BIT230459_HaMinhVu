@@ -160,7 +160,7 @@ void bai7() {
 int main() {
     int chon;
     do {
-        printf("\n================ MENU BAI TAP ================\n");
+        printf("\n==================== MENU BAI TAP ====================\n");
         printf("1. Bai 1 (Slide Ch2/38-40)\n");
         printf("2. Bai 2 (Slide Ch3/5, 11, 12)\n");
         printf("3. Bai 3 (Scope - Bien trung ten)\n");
@@ -188,7 +188,7 @@ int main() {
             case 0: printf("Tam biet!\n"); break;
             default: printf("Lua chon khong hop le!\n");
         }
-        printf("----------------------------------------------\n");
+        printf("----------------------------------------------------------------\n");
     } while (chon != 0);
 
     return 0;
