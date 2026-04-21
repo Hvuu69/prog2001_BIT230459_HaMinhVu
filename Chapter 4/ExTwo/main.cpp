@@ -72,13 +72,12 @@
 //     return 0;
 // }
 
-// Hàm đệ quy tính tổng từ 1 đến n
+// Bài 2
+
 long tinhTongDeQuy(int n) {
-    // Bước 1: Trường hợp cơ sở (Điểm dừng)
     if (n <= 1) {
         return n;
     }
-    // Bước 2: Gọi đệ quy theo công thức S(n) = n + S(n-1)
     return n + tinhTongDeQuy(n - 1);
 }
 

@@ -11,9 +11,11 @@ void clearBuffer() {
 void bai1() {
     int n, a[100], tong = 0;
     printf("\n--- Bai 1: Tong mang 1 chieu ---\n");
-    printf("Nhap so phan tu: "); scanf("%d", &n);
+    printf("Nhap so phan tu: ");
+    scanf("%d", &n);
     for(int i = 0; i < n; i++) {
-        printf("a[%d] = ", i); scanf("%d", &a[i]);
+        printf("a[%d] = ", i);
+        scanf("%d", &a[i]);
         tong += a[i];
     }
     printf("Tong cac phan tu: %d\n", tong);
@@ -23,9 +25,11 @@ void bai1() {
 void bai2() {
     int n, a[100];
     printf("\n--- Bai 2: Tim Max va Index ---\n");
-    printf("Nhap so phan tu: "); scanf("%d", &n);
+    printf("Nhap so phan tu: ");
+    scanf("%d", &n);
     for(int i = 0; i < n; i++) {
-        printf("a[%d] = ", i); scanf("%d", &a[i]);
+        printf("a[%d] = ", i);
+        scanf("%d", &a[i]);
     }
     int max = a[0], index = 0;
     for(int i = 1; i < n; i++) {
@@ -41,8 +45,10 @@ void bai2() {
 void bai3() {
     int n, a[100];
     printf("\n--- Bai 3: Dao chieu mang ---\n");
-    printf("Nhap n: "); scanf("%d", &n);
-    for(int i = 0; i < n; i++) scanf("%d", &a[i]);
+    printf("Nhap n: ");
+    scanf("%d", &n);
+    for(int i = 0; i < n; i++)
+        scanf("%d", &a[i]);
     
     for(int i = 0; i < n/2; i++) {
         int temp = a[i];
@@ -58,9 +64,14 @@ void bai3() {
 void bai4() {
     int n, a[100], x, found = -1;
     printf("\n--- Bai 4: Tim kiem phan tu ---\n");
-    printf("Nhap n: "); scanf("%d", &n);
-    for(int i = 0; i < n; i++) scanf("%d", &a[i]);
-    printf("Nhap gia tri can tim: "); scanf("%d", &x);
+
+    printf("Nhap n: ");
+    scanf("%d", &n);
+    for(int i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Nhap gia tri can tim: ");
+    scanf("%d", &x);
     
     for(int i = 0; i < n; i++) {
         if(a[i] == x) { found = i; break; }
@@ -73,13 +84,17 @@ void bai4() {
 void bai5() {
     int r, c, a[10][10];
     printf("\n--- Bai 5: In ma tran ---\n");
-    printf("Nhap so hang va cot: "); scanf("%d %d", &r, &c);
+
+    printf("Nhap so hang va cot: ");
+    scanf("%d %d", &r, &c);
     for(int i=0; i<r; i++)
         for(int j=0; j<c; j++) {
-            printf("a[%d][%d] = ", i, j); scanf("%d", &a[i][j]);
+            printf("a[%d][%d] = ", i, j);
+            scanf("%d", &a[i][j]);
         }
     for(int i=0; i<r; i++) {
-        for(int j=0; j<c; j++) printf("%d\t", a[i][j]);
+        for(int j=0; j<c; j++)
+            printf("%d\t", a[i][j]);
         printf("\n");
     }
 }
@@ -88,15 +103,22 @@ void bai5() {
 void bai6() {
     int r, c, a[10][10], b[10][10];
     printf("\n--- Bai 6: Tong 2 ma tran ---\n");
-    printf("Nhap kich thuoc (r c): "); scanf("%d %d", &r, &c);
+
+    printf("Nhap kich thuoc (r c): ");
+    scanf("%d %d", &r, &c);
+
     printf("Nhap ma tran A:\n");
-    for(int i=0; i<r; i++) for(int j=0; j<c; j++) scanf("%d", &a[i][j]);
+    for(int i=0; i<r; i++) for(int j=0; j<c; j++)
+        scanf("%d", &a[i][j]);
+
     printf("Nhap ma tran B:\n");
-    for(int i=0; i<r; i++) for(int j=0; j<c; j++) scanf("%d", &b[i][j]);
+    for(int i=0; i<r; i++) for(int j=0; j<c; j++)
+        scanf("%d", &b[i][j]);
     
     printf("Ket qua A + B:\n");
     for(int i=0; i<r; i++) {
-        for(int j=0; j<c; j++) printf("%d\t", a[i][j] + b[i][j]);
+        for(int j=0; j<c; j++)
+            printf("%d\t", a[i][j] + b[i][j]);
         printf("\n");
     }
 }
@@ -105,12 +127,16 @@ void bai6() {
 void bai7() {
     int r, c, a[10][10];
     printf("\n--- Bai 7: Ma tran chuyen vi ---\n");
-    printf("Nhap r, c: "); scanf("%d %d", &r, &c);
-    for(int i=0; i<r; i++) for(int j=0; j<c; j++) scanf("%d", &a[i][j]);
+    printf("Nhap r, c: ");
+    scanf("%d %d", &r, &c);
+    for(int i=0; i<r; i++)
+        for(int j=0; j<c; j++)
+        scanf("%d", &a[i][j]);
     
     printf("Ma tran chuyen vi (%dx%d):\n", c, r);
     for(int j=0; j<c; j++) {
-        for(int i=0; i<r; i++) printf("%d\t", a[i][j]);
+        for(int i=0; i<r; i++)
+            printf("%d\t", a[i][j]);
         printf("\n");
     }
 }

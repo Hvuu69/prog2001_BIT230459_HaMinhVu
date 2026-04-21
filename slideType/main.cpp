@@ -254,3 +254,6 @@ using namespace std;
 //     printf("a = %d", a); // vẫn là 10
 //     return 0;
 // }
+
+
+// ma tran chuyen vi
