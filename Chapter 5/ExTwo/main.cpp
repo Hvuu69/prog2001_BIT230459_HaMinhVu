@@ -33,14 +33,18 @@ struct Car {
 void bai1() {
     printf("\n--- Bai 1: Struct Student co ban ---\n");
     Student sv1;
-    
+
     // Gan du lieu
     sv1.mssv = 20240001;
     strcpy(sv1.ten, "Nguyen Van A");
+    struct Student sv2 = {123123132, "bua"};
+
 
     // In thong tin
     printf("MSSV: %d\n", sv1.mssv);
     printf("Ten: %s\n", sv1.ten);
+    printf("MSSV: %d\n", sv2.mssv);
+    printf("Ten: %s\n", sv2.ten);
 }
 
 void bai2() {
